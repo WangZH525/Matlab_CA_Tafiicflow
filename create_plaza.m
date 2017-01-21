@@ -11,7 +11,10 @@ function [plaza, v, time] = create_plaza(B, L, plazalength)
 % zhou lvwen: zhou.lv.wen@gmail.com
 
 
-plaza = zeros(plazalength,B+2); % 1 = car, 0 = empty, -1 = forbid, -3 = empty&booth
+plaza = zeros(plazalength,B+2);
+% 1 = normalcar, 0 = empty, -1 = forbid, -3 = empty&booth
+% 2 = autocar, -4 = empty&autobooth, -5 = empty&etc
+% 3 = leftforbid, 4 = rightforbid
 v = zeros(plazalength,B+2); % velocity of automata (i,j), if it exists
 time = zeros(plazalength,B+2); % cost time of automata (i,j) if it exists
 
