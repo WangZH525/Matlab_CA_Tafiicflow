@@ -31,7 +31,7 @@
 clear;clc
 iterations = 5000; % the maximal iterations of simulation
 B = 8; % number booths
-L = 3; % number lanes in highway before and after plaza
+L = 4; % number lanes in highway before and after plaza
 Arrival=4; % the mean total number of cars that arrives 
 
 plazalength = 101; % length of the plaza
